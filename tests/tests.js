@@ -1,4 +1,4 @@
-describe('finding songs in different html pages', function() {
+describe('finding songs in html pages', function() {
   var assert = require('assert');
   var fs = require('fs');
   var path = require('path');
