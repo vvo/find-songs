@@ -7,18 +7,22 @@ describe('finding songs in different html pages', function() {
   var tests = fs.readdirSync(path.join(__dirname, 'fixtures'));
   tests.forEach(function(type) {
     describe(type, function() {
-      var html, songs;
+      var html, songs, params;
 
       before(function() {
         html = fs.readFileSync(path.join(__dirname, 'fixtures', type, 'page.html'));
         songs = require('./fixtures/' + type + '/results.json');
+        params = require('./fixtures/' + type + '/params.js');
       });
 
       it('find songs', function() {
+        var foundSongs = findSongs(html, params.startDate, type);
+
         if (process.env.DEBUG !== undefined) {
-          console.log(JSON.stringify(findSongs(html, type)));
+          console.log(JSON.stringify(foundSongs));
         }
-        assert.deepEqual(findSongs(html, type), songs);
+
+        assert.deepEqual(foundSongs, songs);
       });
     });
   });
