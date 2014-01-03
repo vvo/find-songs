@@ -1,0 +1,691 @@
+
+
+
+<!DOCTYPE html><!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="apple-itunes-app" content="app-id=368205908">
+
+
+        <title>Skyrock - Chercher un son</title>        <link href="//static.skyrock.fm/layouts/frontoffice/build/css/styles.css?0ae779dc" media="screen" rel="stylesheet" type="text/css" >        <meta name="description" content="Chercher un son Skyrock" >
+                <script src="/layouts/frontoffice/js/vendor/modernizr.js"></script>
+        <script type="text/javascript" src="//static.skyrock.fm/layouts/frontoffice/js/f3player.js"></script>
+
+        <link rel="icon" href="/favicon32.png" />
+
+        <script>window.addEventListener("message", function(e){/*console.log(e.data);*/if(e.data&&!window.habillagePub)try{window.habillagePub=JSON.parse(e.data);}catch(e){}});</script>
+    </head>
+        <body >
+        <!--[if lt IE 9]>
+            <p class="browsehappy">Notre site est optimisé pour les navigateurs plus récents. <a data-bypass href="http://browsehappy.com/">Mets le tien à jour !</a></p>
+        <![endif]-->
+        <!-- #header -->
+        <header id="header" role="banner">
+            <div class="header__inner">
+                <div id="player" class="header__player">
+                    <div class="player__controls">
+                        <button id="player-play" class="icon icon-play-stop">Play</button>
+                        <div class="player__controls__volume">
+                            <button id="player-vol" class="icon icon-volume">Volume</button>
+                            <div id="player-range-volume" class="b-slider"></div>
+                        </div>
+                        <div id="html5player"></div>
+                    </div>
+                    <div id="player__on-air" class="player__on-air">
+                        <div class="player__current-broadcast"></div>
+                        <div class="media player__current-track"></div>
+                                            </div>
+                    <div class="player__infos">
+                        <a href="/cetait-quoi-ce-son">C'était quoi ce son</a>
+                        <a data-bypass class="js-modal" data-target="modal-frequences" href="/skyrock/frequence">Ta fréquence</a>
+                    </div>
+
+                </div>
+                <div class="header__nav">
+                    <div class="row">
+                        <a href="/" class="header__logo">
+                            <img src="/layouts/frontoffice/images/skyrock.png" alt="Skyrock premier sur le rap" class="picture" />
+                        </a>
+                        <nav role="navigation">
+                            <ul class="primary-nav">
+                                <li>
+                                    <a href="/emissions">
+                                        &Eacute;missions                                    </a>
+                                </li><!--
+                                --><li>
+                                    <a href="/animateurs">
+                                        Animateurs                                    </a>
+                                </li><!--
+                                --><li>
+                                    <a href="/news">
+                                        News                                    </a>
+                                </li><!--
+                                --><li>
+                                    <a href="/concerts">
+                                        Concerts                                    </a>
+                                </li><!--
+                                --><li>
+                                    <a href="/videos">
+                                        Vidéos                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                                                <a href="/fr/toutes-les-applications-skyrock-sur-ton-mobile" class="header__mobile">Application mobile</a>
+
+                    </div>
+                </div>
+            </div>
+        </header><!-- /#header -->
+
+        <!-- Pub -->
+        <div id="js-pub--banner" class="b-pub--banner"></div>
+        <!-- /Pub -->
+
+        <!-- .sub-header -->
+        <div class="sub-header hidden">
+                    </div>
+        <!-- /.sub-header -->
+
+        <!-- #main -->
+        <div id="main" role="main">
+            <script>
+    window.seo = {
+        title : "Skyrock - Chercher un son",
+        description : "Chercher un son Skyrock"
+    };
+</script>
+
+
+<div class="row">
+    <div class="cell-8">
+        <div class="container">
+            <h1 class="heading-2">C’était quoi ce son ?</h1>
+            <div class="b-filters--pattern b-filters--full clearfix">
+                <form action="/sound" method="get" class="form form--search-sound" role="search">
+                    <fieldset>
+                        <div class="form-item">
+                            <div class="field-wrapper">
+
+<input type="text" name="fielddate" id="fielddate" value="2013-12-27" class="form__field-date" placeholder="03/01/2014">                            </div>
+                        </div>
+                        <div class="form-item">
+                            <div class="field-wrapper input-append bootstrap-timepicker">
+
+<input type="text" name="fieldhour" id="fieldhour" value="23:50" class="form__field-time" placeholder="04:25">                            </div>
+                        </div>
+                        <div class="form-submit">
+
+<button name="submit" id="submit" type="submit" class="btn-action btn-submit"><span class="btn-action__txt">Rechercher</span><span class="icon-spinner"></span></button>                        </div>
+                    </fieldset>
+                    <div class="field-error"></div>
+                </form>
+            </div>
+            <ul class="b-list b-list--sounds">
+                                    <li class="b-list__item b-list__item--cat6">
+            <div class="b-list__item__illu b-list__item__number">
+            <div class="b-list__item__number__infos">
+                23:35            </div>
+            <img src="http://13.mgl.skyrock.net/art/SKYC.334132313.6.1.jpg" width="140" height="140" alt="Booba Feat. Maitre Gims" class="picture" />
+        </div>
+        <div class="b-list__item__text">
+            <h2 class="heading-3">Booba Feat. Maitre Gims</h2>
+            <span class="teaser-1">
+                Longueur D'Avance            </span>
+        </div>
+        <div class="b-share">
+        Partager :        <ul class="list-share" data-url="/" data-title="Viens écouter Longueur D'Avance de Booba Feat. Maitre Gims sur Skyrock.">
+            <li>
+                <a data-provider="skyrock" data-bypass href="http://www.skyrock.com/m/blog/share.php?js=0" class="skysocial-s">
+                    <span class="icon icon-skyrock-m2 skyrock-m2_hover">Skyrock</span>
+                </a>
+            </li><!--
+            --><li>
+                <a data-provider="facebook" href="https://www.facebook.com/sharer/sharer.php">
+                    <span class="icon icon-facebook-m2 facebook-m2_hover">Facebook</span>
+                </a>
+            </li><!--
+            --><li>
+                <a data-provider="twitter" href="https://twitter.com/share">
+                    <span class="icon icon-twitter-m2 twitter-m2_hover">Twitter</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</li><li class="b-list__item b-list__item--cat6">
+            <div class="b-list__item__illu b-list__item__number">
+            <div class="b-list__item__number__infos">
+                00:03            </div>
+            <img src="http://35.mgl.skyrock.net/art/SKYC.1093748535.2.1.jpg" width="140" height="140" alt="Jason Derulo" class="picture" />
+        </div>
+        <div class="b-list__item__text">
+            <h2 class="heading-3">Jason Derulo</h2>
+            <span class="teaser-1">
+                Talk Dirty            </span>
+        </div>
+        <div class="b-share">
+        Partager :        <ul class="list-share" data-url="/" data-title="Viens écouter Talk Dirty de Jason Derulo sur Skyrock.">
+            <li>
+                <a data-provider="skyrock" data-bypass href="http://www.skyrock.com/m/blog/share.php?js=0" class="skysocial-s">
+                    <span class="icon icon-skyrock-m2 skyrock-m2_hover">Skyrock</span>
+                </a>
+            </li><!--
+            --><li>
+                <a data-provider="facebook" href="https://www.facebook.com/sharer/sharer.php">
+                    <span class="icon icon-facebook-m2 facebook-m2_hover">Facebook</span>
+                </a>
+            </li><!--
+            --><li>
+                <a data-provider="twitter" href="https://twitter.com/share">
+                    <span class="icon icon-twitter-m2 twitter-m2_hover">Twitter</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</li>                            </ul>
+        </div>
+    </div>
+
+<div class="cell-4 sidebar sidebar--2">
+    <div class="b-pub">
+        <div class="block-grid block-grid--large block-grid--pub">
+            <iframe scrolling="no" frameborder="0" marginheight="0" marginwidth="0" src="http://skyrock.net/banners/iframe_himedia_skyfm.html?z=home&lang=fr&f=300x250&1x1=1x1&f2=1x1"></iframe>
+            <div class="block-grid__text">
+                <h2 class="heading-3 heading">Publicité</h2>
+            </div>
+        </div>
+    </div>
+    <form method="post" action="/api-fm/telex.php/create.json" class="b-telex js-form--telex">
+        <div class="b-telex__header">
+            <img data-src="/static/logo-skyrock.png" src="/static/logo-skyrock.png" class="picture" width="48" height="48" />
+        </div>
+        <div class="b-telex__fields" data-count="140">
+            <textarea name="message" class="field-textarea" data-placeholder="envoie ton message à l'antenne de Skyrock !" placeholder="envoie ton message à l'antenne de Skyrock !" maxlength="140"></textarea>
+        </div>
+
+        <div class="b-telex__upload-file">
+            <i class="icon icon-file"></i>
+            <input type="file" name="picture_data" class="js-telex__fileupload" />
+        </div>
+        <div class="js-progress-upload hidden">
+            <div class="js-progress-upload__bar"></div>
+        </div>
+
+        <div class="js-result-upload hidden"></div>
+
+        <div class="b-telex__footer align-right">
+            <ul class="list-share list-share--m">
+                <li class="hidden" data-provider="skyrock">
+                    <span class="icon icon-skyrock-m2"></span>
+                </li><!--
+                --><li class="hidden" data-provider="facebook">
+                    <span class="icon icon-facebook-m2"></span>
+                </li><!--
+                --><li class="hidden" data-provider="twitter">
+                    <span class="icon icon-twitter-m2"></span>
+                </li>
+            </ul>
+            <button type="submit" class="b-telex__submit btn-submit">
+                    <span class="btn-submit__text">Envoyer</span>
+            </button><!--
+            --><a href="#telex-infos" data-bypass role="button" class="btn-more btn-submit js-modal">
+                <span class="btn-submit__icon"><span class="icon icon-engrenage">+</span></span>
+            </a>
+            <div class="b-icon-spinner hidden">
+                <span class="icon-spinner"></span>
+            </div>
+        </div>
+        <div class="js-telex-send-to b-telex-send-to hidden">
+            <span class="custom-checkbox_container">
+                <input type="checkbox" name="public" id="message-home" value="0" class="field-checkbox" checked />
+                <label for="message-home">
+                    sur skyrock.fm
+                </label>
+            </span>
+            <span class="custom-checkbox_container">
+                <input type="checkbox" name="prive" id="message-radio" value="0" class="field-checkbox" />
+                <label for="message-radio">
+                    dans les studios
+                </label>
+            </span>
+        </div>
+    </form>
+
+    <div id="telex-send-radio" class="modal modal--bizo hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal__inner">
+            <div class="modal__header">
+                <h1 class="modal__heading hidden">
+                    Balance ton message à l'antenne
+                </h1>
+                <button class="modal__close close" data-dismiss="modal" aria-hidden="true">
+                    ✖
+                </button>
+            </div>
+            <div class="modal__body">
+                <p class="legend heading-3 align-center">
+                    <span>Ton message vient d'apparaître sur les écrans des studios</span>
+                </p>
+                <div class="align-center">
+                    <img src="/static/studios.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
+                    <div id="js-telex-list-tiny" class="b-telex-messages">
+            <ul class="b-list b-list--messages">
+                            </ul>
+            <a href="/telex" class="more">
+                <span>Voir tous les messages</span>
+            </a>
+        </div>
+    </div></div>        </div><!-- /#main -->
+
+        <!-- .sub-footer -->
+        <!-- /.sub-footer -->
+
+        <div style="width:1px;height:1px;position:absolute">
+            <script>document.write('<'+'sc'+'ript src="//js.himediads.com/js?lang=fr&s=skyrock.fm&z=interstitiel&d='+Math.floor(Math.random()*10000000000)+'"><\/'+'sc'+'ript>');</script>
+            <script type="text/javascript">if (typeof getAdLinkAdTag=='function') getAdLinkAdTag( '1x1' );</script>
+        </div>
+
+        <!-- #footer -->
+        <footer id="footer">
+            <div class="footer__sub-footer">
+                <div class="row">
+                    <ul class="list-social align-center">
+                        <li>
+                            <a rel="external" data-bypass href="http://skyrock.com/">
+                                <span class="icon icon-skyrock">Skyrock</span>
+                            </a>
+                        </li><!--
+                        --><li>
+                            <a rel="external" data-bypass href="https://www.facebook.com/SkyrockFM">
+                                <span class="icon icon-facebook">Facebook</span>
+                            </a>
+                        </li><!--
+                        --><li>
+                            <a rel="external" data-bypass href="https://twitter.com/SkyrockFM">
+                                <span class="icon icon-twitter">Twitter</span>
+                            </a>
+                        </li><!--
+                        --><li>
+                            <a rel="external" data-bypass href="http://instagram.com/skyrockfm">
+                                <span class="icon icon-instagram">Instagram</span>
+                            </a>
+                        </li><!--
+                        --><li>
+                            <a rel="external" data-bypass href="https://google.com/+skyrockfm">
+                                <span class="icon icon-google-plus">Google +</span>
+                            </a>
+                        </li><!--
+                        --><li>
+                            <a rel="external" data-bypass href="http://youtube.com/skyrockfm">
+                                <span class="icon icon-youtube">Youtube</span>
+                            </a>
+                        </li><!--
+                        --><li>
+                            <a rel="external" data-bypass href="http://www.dailymotion.com/skyrock">
+                                <span class="icon icon-dailymotion">Dailymotion</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__footer">
+                <div class="row row-full">
+                    <div class="footer__col">
+                        <h2 class="heading-4">Skyrock</h2>
+                        <ul class="list-2">
+                                                        <li>a href="/fr/regie-radio">Régie radio</a></li>
+                            <li><a rel="external" data-bypass href="http://springbird.fr/">Régie web</a></li>
+                            <li><a href="/fr/credits">Crédits</a></li>
+                            <li><a href="/fr/cgu">CGU</a></li>
+                                                                                </ul>
+                    </div>
+
+                    <div class="footer__col">
+                        <h2 class="heading-4">Mobile</h2>
+                                                <ul class="list-2">
+                            <li><a href="/fr/toutes-les-applications-skyrock-sur-ton-mobile#appli_skyrockfm">Appli Skyrock</a></li>
+                            <li><a href="/fr/toutes-les-applications-skyrock-sur-ton-mobile#appli_premiersurlerap">Appli Premier sur le Rap</a></li>
+                            <li><a href="/fr/toutes-les-applications-skyrock-sur-ton-mobile#appli_romano">Appli Bugs de Romano</a></li>
+                            <li><a href="/fr/toutes-les-applications-skyrock-sur-ton-mobile#appli_skyrockcashback">Appli Skyrock CashBack</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h2 class="heading-4">Sites</h2>
+                        <ul class="list-2">
+                            <li><a rel="external" data-bypass href="http://www.skyrock.com">Skyrock.com</a></li>
+                            <li><a rel="external" data-bypass href="http://www.smax.com">Smax</a></li>
+                            <li><a rel="external" data-bypass href="http://www.kwest.com">Kwest</a></li>
+                            <li><a rel="external" data-bypass href="http://www.tasante.com">Tasanté</a></li>
+                            <li><a rel="external" data-bypass href="http://www.omixo.com">Omixo</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h2 class="heading-4">Contact</h2>
+                        <ul class="list-2">
+                            <li><a data-bypass href="#contact" class="js-modal">Contact</a></li>
+                            <li><a data-bypass href="#probleme-ecoute" class="js-modal">Problème d'écoute ?</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </footer><!-- /#footer -->
+
+
+        <!-- Modal Telex -->
+        <div id="telex-infos" class="modal modal--bizo hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal__inner">
+                <div class="modal__header">
+                    <h1 class="modal__heading">
+                        Balance ton message à l'antenne
+                    </h1>
+                    <button class="modal__close close" data-dismiss="modal" aria-hidden="true">
+                        &#10006;
+                    </button>
+                </div>
+                <div class="modal__body">
+                    <form action="#" class="form form--telex">
+                        <fieldset>
+                            <legend>Tu veux qu’on parle de toi à l’antenne ?</legend>
+                            <p>Dis-nous qui tu es :</p>
+                            <div id="js-anonymous" class="js-form-type b-dark media-pic">
+                                <div class="media-pic__illu">
+                                    <img src="/static/avatar-1.jpg" width="100" height="100" alt="" class="picture" />
+                                    <span class="js-btn-delete img-btn-delete">✖</span>
+                                    <span class="icon-spinner hidden"></span>
+                                    <input type="file" name="avatar" class="js-telex__fileupload telex__input-fileupload" />
+                                </div>
+                                <div class="media-pic__txt">
+                                    <div class="form-item">
+                                        <div class="field-wrapper">
+                                            <label for="form-telex_pseudo" class="label_for_ie">Pseudo</label>
+                                            <input id="form-telex_pseudo" type="text" placeholder="Pseudo" name="login" class="field-text" maxlength="26" />
+                                        </div>
+                                    </div>
+                                    <div class="form-item form-item-nomarginright">
+                                        <div class="field-wrapper">
+                                            <label for="form-telex_age" class="label_for_ie">Age</label>
+                                            <input id="form-telex_age" type="number" name="age" placeholder="Âge" class="field-text" min="12" max="99" /> <span>ans</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-item">
+                                        <fieldset class="form-radios">
+                                            <legend>Genre</legend>
+                                            <div class="field-wrapper">
+                                                <input type="radio" name="gender" id="mec" value="1" checked="checked" class="field-radio" />
+                                                <label for="mec">
+                                                    Mec
+                                                </label>
+                                                <input type="radio" name="gender" id="nana" value="2" class="field-radio">
+                                                <label for="nana">
+                                                    Nana
+                                                </label>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="form-item">
+                                        <fieldset class="form-number">
+                                            <legend>Numéro de téléphone</legend>
+                                            <div class="form-item form-item-alone">
+                                                <div class="field-wrapper">
+                                                    <label for="form-telex_tel" class="label_for_ie">Téléphone (0600000000)</label>
+                                                    <input id="form-telex_tel" type="text" id="number" name="phone" placeholder="0600000000" class="field-text" />
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="js-provider" class="js-form-type b-dark media-pic hidden"></div>
+
+                            <span class="sep">ou</span>
+                            <ul class="list list--connect">
+                                <li>
+                                    <a href="/skyrock/auth/provider/skyrock" class="icon icon-connect-skyrock">
+                                        Se connecter avec Skyrock
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/skyrock/auth/provider/facebook" class="icon icon-connect-facebook">
+                                        Se connecter avec Facebook
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/skyrock/auth/provider/twitter" class="icon icon-connect-twitter">
+                                        Se connecter avec Twitter
+                                    </a>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <div class="form-submit align-center">
+                            <input type="submit" class="btn-action btn-action--b" value="OK" />
+                            <span class="icon-spinner"></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- /Modal Telex -->
+
+        <!-- Modal Contact -->
+        <div id="contact" class="modal modal--bizo hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal__inner">
+                <div class="modal__header">
+                    <h1 class="modal__heading">
+                        Contact                    </h1>
+                    <button class="modal__close close" data-dismiss="modal" aria-hidden="true">
+                        &#10006;
+                    </button>
+                </div>
+                <div class="modal__body">
+                                                            <form action="/contact" method="post" class="form form-contact form-contact clearfix">
+
+                        <div class="form-part">
+                            <div class="field-group">
+                                <div class="form-item">
+                                    <div class="field-wrapper">
+
+<select name="pourquoi" id="pourquoi" class="field-select">
+    <option value="0" label="Bug sur le site web">Bug sur le site web</option>
+    <option value="1" label="Tu cherches une info sur un artiste">Tu cherches une info sur un artiste</option>
+    <option value="2" label="Tu souhaites prendre contact avec un animateur">Tu souhaites prendre contact avec un animateur</option>
+    <option value="3" label="Demande de partenariat avec skyrock">Demande de partenariat avec skyrock</option>
+</select>                                    </div>
+                                                                    </div>
+                                <div class="form-item">
+                                    <label for="nom" class="required">Nom<span class='required'> * </span></label>
+                                    <div class="field-wrapper">
+
+<input type="text" name="nom" id="nom" value="" class="field-text">                                    </div>
+                                                                    </div>
+                                <div class="form-item">
+                                    <label for="prenom" class="required">Prénom<span class='required'> * </span></label>
+                                    <div class="field-wrapper">
+
+<input type="text" name="prenom" id="prenom" value="" class="field-text">                                    </div>
+                                                                    </div>
+                                <div class="form-item">
+                                    <label for="zipcode" class="optional">Code postal</label>
+                                    <div class="field-wrapper">
+
+<input type="text" name="zipcode" id="zipcode" value="" class="field-text">                                    </div>
+                                                                    </div>
+                                <div class="form-item">
+                                    <label for="ville" class="optional">ville</label>
+                                    <div class="field-wrapper">
+
+<input type="text" name="ville" id="ville" value="" class="field-text">                                    </div>
+                                                                    </div>
+                                <div class="form-item">
+                                    <label for="phone" class="optional">Téléphone</label>
+                                    <div class="field-wrapper">
+
+<input type="text" name="phone" id="phone" value="" class="field-text">                                    </div>
+                                                                    </div>
+                                <div class="form-item">
+                                    <label for="email" class="required">E-mail<span class='required'> * </span></label>
+                                    <div class="field-wrapper">
+
+<input type="text" name="email" id="email" value="" class="field-text">                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                        <div class="form-part">
+                            <div class="form-item">
+                                <label for="message" class="optional">Message</label>
+                                <div class="field-wrapper">
+
+<textarea name="message" id="message" class="field-textarea" rows="24" cols="80"></textarea>                                </div>
+                                                            </div>
+                        </div>
+
+                        <div class="form-submit align-center">
+
+<input type="submit" name="submit" id="submit" value="Envoyer ce message" class="btn-action btn-action--b">                            <span class="icon-spinner"></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- /Modal Contact -->
+
+        <!-- Modal Problème d'écoute -->
+        <div id="probleme-ecoute" class="modal modal--bizo hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal__inner">
+                <div class="modal__header">
+                    <h1 class="modal__heading">
+                        Problème d'écoute                    </h1>
+                    <button class="modal__close close" data-dismiss="modal" aria-hidden="true">
+                        &#10006;
+                    </button>
+                </div>
+                <div class="modal__body">
+                                                            <form action="/probleme-d-ecoute" method="post" class="form form-contact form-contact-probleme-ecoute clearfix">
+
+                        <div class="form-part">
+                            <div class="field-group">
+                                <div class="form-item">
+                                    <div class="field-wrapper">
+
+<select name="pourquoi" id="pourquoi" class="field-select">
+    <option value="0" label="En ville ou sur la route">En ville ou sur la route</option>
+    <option value="1" label="Sur le site web">Sur le site web</option>
+    <option value="2" label="Sur ton téléphone">Sur ton téléphone</option>
+</select>                                    </div>
+                                                                    </div>
+                                <div class="form-item">
+                                    <label for="nom" class="required">Nom<span class='required'> * </span></label>
+                                    <div class="field-wrapper">
+
+<input type="text" name="nom" id="nom" value="" class="field-text">                                    </div>
+                                                                    </div>
+                                <div class="form-item">
+                                    <label for="prenom" class="required">Prénom<span class='required'> * </span></label>
+                                    <div class="field-wrapper">
+
+<input type="text" name="prenom" id="prenom" value="" class="field-text">                                    </div>
+                                                                    </div>
+                                <div class="form-item">
+                                    <label for="zipcode" class="optional">Code postal</label>
+                                    <div class="field-wrapper">
+
+<input type="text" name="zipcode" id="zipcode" value="" class="field-text">                                    </div>
+                                                                    </div>
+                                <div class="form-item">
+                                    <label for="ville" class="optional">Ville</label>
+                                    <div class="field-wrapper">
+
+<input type="text" name="ville" id="ville" value="" class="field-text">                                    </div>
+                                                                    </div>
+                                <div class="form-item">
+                                    <label for="phone" class="optional">Téléphone</label>
+                                    <div class="field-wrapper">
+
+<input type="text" name="phone" id="phone" value="" class="field-text">                                    </div>
+                                                                    </div>
+                                <div class="form-item">
+                                    <label for="email" class="required">E-mail<span class='required'> * </span></label>
+                                    <div class="field-wrapper">
+
+<input type="text" name="email" id="email" value="" class="field-text">                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                        <div class="form-part">
+                            <div class="form-item">
+                                <label for="message" class="optional">Message</label>
+                                <div class="field-wrapper">
+
+<textarea name="message" id="message" class="field-textarea" rows="24" cols="80"></textarea>                                </div>
+                                                            </div>
+                        </div>
+
+                        <div class="form-submit align-center">
+
+<input type="submit" name="submit" id="submit" value="Envoyer ce message" class="btn-action btn-action--b">                            <span class="icon-spinner"></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- /Modal Problème d'écoute -->
+
+        <div id="fb-root"></div>
+
+        <div id="js-loading" class="b-loading">
+                    </div>
+
+        <div id="modal-frequences" class="modal modal--tiny hide fade">
+            <div class="modal__inner"></div>
+        </div>
+
+                    <script data-main="/layouts/frontoffice/build/dev/app.js?54ff153b" src="/layouts/frontoffice/js/vendor/require.js?c0a6b1ec"></script>
+                <!-- estat -->
+        <script>
+            var _IM_estat = {}, _IM_estat_c = 0;
+            function _estatl(_s, _g, _p, _c)
+            {
+                _c = _c ? _c : 'undefined estat_group';
+                _p = _p ? _p : 'undefined estat_page';
+
+                var _S = 'http://sky.estat.com/m/web/';
+                var _M = _s + '?';
+                _M += 'n=' + Math.round(Math.random() * 1000000000);
+                if (_g != '') _M += '&g=' + _g;
+                _M += '&c=' + escape(_c);
+                _M += '&p=' + escape(_p);
+                var _R = escape(window.document.referrer);
+                if (_R == 'undefined' || _R == '') _R = '_bm_';
+                _M += '&r=' + _R;
+                if (typeof (screen) == 'object') _M += '&scw=' + screen.width + '&sch=' + screen.height + '&scp=' + screen.colorDepth;
+                var i = _IM_estat[(_IM_estat_c++)%10];
+                i = new Image();
+                i.src = _S + _M;
+            }
+            function estat_skyfm(group, page)
+            {
+                return _estatl('229029210336', '', page, group);
+            }
+
+        </script>
+        <!-- /estat -->
+        <!-- GA -->
+        <script type="text/javascript">var _gaq=[['_setAccount','UA-3703498-20']];(function(d){var g=d.createElement('script');g.async=1;g.src='//google-analytics.com/ga.js';d.body.appendChild(g)})(document);</script>
+
+        <script>
+            var meta = {
+                title : "Skyrock",
+                description: "Skyrock – Premier sur le Rap"
+            };
+        </script>
+
+                    </body>
+</html>
